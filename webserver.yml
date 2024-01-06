@@ -4,6 +4,11 @@
   tasks:
   - name: Install webserver
     apt:
-     name: "{{webserver}}"
+     name: "{{item}}"
      state: present
     when: ansible_os_family =="Debian"
+    loop:
+     - git
+     - python3
+     - python3-boto
+     - wget
