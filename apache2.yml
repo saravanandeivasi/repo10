@@ -2,4 +2,18 @@
  - name: install Webserver
    apt:
     name: "{{webserver}}"
-    state: present 
+    state: present
+ - name: Install multiple application
+   apt:
+    name: "{{item}}"
+    state: present
+   loop:
+     - git
+     - python
+     - wget
+     - python3
+     - gnome-chess
+     - rhythmbox
+
+
+    
