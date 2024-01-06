@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: install Webserver
+    apat:
+     name: "{{webserver}}"
+     state: present
