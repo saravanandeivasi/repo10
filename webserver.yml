@@ -6,3 +6,4 @@
     apt:
      name: "{{webserver}}"
      state: present
+    when: ansible_os_family =="Debian"
