@@ -1,5 +1,5 @@
 ---
-- name: install Webserver
-    apt:
-     name: "{{webserver}}"
-     state: present 
+ - name: install Webserver
+   apt:
+    name: "{{webserver}}"
+    state: present 
