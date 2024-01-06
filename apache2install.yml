@@ -3,6 +3,6 @@
   become: yes
   tasks:
   - name: install Webserver
-    apat:
+    apt:
      name: "{{webserver}}"
      state: present
