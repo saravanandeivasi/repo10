@@ -1,5 +1,5 @@
 ---
 - hosts: webservers
   become: yes
-  toles:
-  - {role: vmcreaterole, when: ansible_os_family== "Debian"}
+  tasks:
+  - include_tasks: webserver.yml
