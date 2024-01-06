@@ -1,0 +1,12 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: Install webserver
+    apt:
+     name: "{{item}}"
+     state: present
+    when: ansible_os_family =="Debian"
+    loop:
+     - python3-boto
+     - wget
