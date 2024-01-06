@@ -1,8 +1,0 @@
----
-- hosts: webserver
-  become: yes
-  tasks:
-  - name: install webserver
-    apt:
-     name: apache2
-     state: present
