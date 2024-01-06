@@ -9,7 +9,8 @@
     state: present
    loop:
      - git
-     - python
+     - python3-boto
+     - python3-boto3
      - wget
      - python3
      - gnome-chess
