@@ -1,6 +1,4 @@
 ---
-webserver: apache2
-javainstall: default-jre
 key: Mas
 instancetype: t2.micro
 ami: ami-09a0c989feb4ac0ea

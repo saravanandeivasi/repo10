@@ -1,9 +1,0 @@
----
- - name: install Java
-   apt:
-    name: "{{javainstall}}"
-    state: present
-
-
-
-    
