@@ -1,0 +1,19 @@
+---
+  - name: create a new instance on amazon
+    ec2:
+     aws_access_key: AKIASX7WFWRFALYONC66
+     aws_secret_key: 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
+     key_name: "{{key}}"
+     instance_type: "{{instancetype}}"
+     image: "{{ami}}"
+     wait: yes
+     group:
+     count: 1
+     vpc_subnet_id: subnet-070d6d35334487f68
+     assign_public_ip: yes
+     region: "{{region}}"
+     instance_tags:
+      Name: ansible_nodes
+    register: ec2_info
+  - debug:
+          msg: "{{ec2_info}}"

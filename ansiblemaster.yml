@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connetion: local
+  gather_facts: no
+  tasks:
+  - include_tasks: server.yml
+  
