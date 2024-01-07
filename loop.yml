@@ -1,7 +1,5 @@
 ---
 - name: install multiple files
   apt:
-   name: "{{item}}"
-   state: Present
   loop:
   - python3-bot3 
