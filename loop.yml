@@ -1,0 +1,13 @@
+ ---
+ - name: Install multiple application
+   apt:
+    name: "{{item}}"
+    state: present
+   loop:
+     - git
+     - python3-boto
+     - python3-boto3
+     - wget
+     - python3
+     - gnome-chess
+     - rhythmbox
