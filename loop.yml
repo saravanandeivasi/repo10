@@ -5,5 +5,4 @@
     state: present
    loop:
      - git
-     - python3-boto
-     - python3-boto3
+
