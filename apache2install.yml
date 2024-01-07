@@ -1,6 +1,8 @@
 ---
 - hosts: webservers
   become: yes
+  gather_facts: false
   tasks:
-  - include_tasks: apache2.yml
-  - include_tasks: loop.yml
+   - include_tasks: ec2vmcreation.yml
+ # - include_tasks: apache2.yml
+  #- include_tasks: loop.yml
