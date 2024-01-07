@@ -17,3 +17,26 @@
     register: ec2_info
   - debug:
           msg: "{{ec2_info}}"
+
+  - name: Create a new Security Group
+    ec2_group:
+     name: ec2-sg
+     description: allow Ports
+     region: "{{region}}"
+     rules:
+      - proto: tcp
+        from_port: 80
+        to_port: 80
+        cidr_ip: 0.0.0.0/0
+
+      - proto: tcp
+        from_port: 22
+        to_port: 22
+        cidr_ip: 0.0.0.0/0
+
+      - proto: tcp
+        from_port: 443
+        to_port: 443
+        cidr_ip: 0.0.0.0/0
+        
+   register: ec2-sg         
