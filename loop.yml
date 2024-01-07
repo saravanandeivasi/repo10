@@ -1,8 +1,7 @@
- ---
- - name: Install multiple application
-   apt:
-    name: "{{item}}"
-    state: present
-   loop:
-     - git
-
+---
+- name: install multiple files
+  apt:
+   name: "{{item}}"
+   state: Present
+  loop:
+  - python3-bot3 
