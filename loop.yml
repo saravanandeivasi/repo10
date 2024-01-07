@@ -3,3 +3,5 @@
   apt:
   loop:
   - python3-bot3 
+  - tree
+  
