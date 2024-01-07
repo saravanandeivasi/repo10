@@ -1,8 +1,8 @@
 ---
   - name: create a new instance on amazon
     ec2:
-     aws_access_key: AKIASX7WFWRFALYONC66
-     aws_secret_key: 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
+     aws_access_key: AKIASX7WFWRFPEQ2Y5NK
+     aws_secret_key: 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
      key_name: "{{key}}"
      instance_type: "{{instancetype}}"
      image: "{{ami}}"
