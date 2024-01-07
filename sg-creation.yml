@@ -3,7 +3,7 @@
   ec2_group:
    name: ec2-sg
    description: allow Ports
-   regions: "{{region}}"
+   region: "{{region}}"
    rules:
     - proto: tcp
       from_port: 80
